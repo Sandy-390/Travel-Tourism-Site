@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <h1>Online Bus Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Bus Booking System</h2>
+            <p>Book your buses online quickly and easily.</p>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your buses</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="departure">Departure City:</label>
+                    <select id="departure" name="departure">
+                        <option value="city1">City 1</option>
+                        <option value="city2">City 2</option>
+                        <option value="city3">City 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination City:</label>
+                    <select id="destination" name="destination">
+                        <option value="city1">City 1</option>
+                        <option value="city2">City 2</option>
+                        <option value="city3">City 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Departure Time:</label>
+                    <select id="time" name="time">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="seats">Number of Seats:</label>
+                    <input type="number" id="seats" name="seats" min="1" max="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit">Book buses</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: BDS^2@booking.com</p>
+            <p>Phone: 8148491404</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bus Booking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
